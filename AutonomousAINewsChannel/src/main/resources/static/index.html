@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous News Channel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Headlines Bar -->
+    <div class="top-headlines">
+        <div class="breaking-label">BREAKING NEWS</div>
+        <div class="marquee">
+            <div class="marquee-content">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span> </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-left">
+            <div class="live-indicator">
+                <span class="live-dot"></span>
+                <span id="live-status">LIVE</span>
+            </div>
+            <div class="next-update">
+                Next Update: <span id="countdown">30:00</span>
+            </div>
+        </div>
+        <div class="status-right">
+            <div class="current-time">
+                <span id="current-time"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="news-grid">
+            <!-- Left News Box -->
+            <div class="news-box left-box" id="left">
+                <div class="category-tag environment" id="leftcato"></div>
+                <h2 class="news-title" id="lefttitle"></h2>
+                <p class="news-content" id="leftcontent">
+                </p>
+                <div class="news-footer">
+                    Updated: <span id="left-updated"></span>
+                </div>
+            </div>
+
+            <!-- Right News Box -->
+            <div class="news-box right-box" id="right">
+                <div class="category-tag technology" id="rightcato"></div>
+                <h2 class="news-title" id="righttitle"></h2>
+                <p class="news-content" id="rightcontent">
+                </p>
+                <div class="news-footer">
+                    Updated: <span id="right-updated"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Headlines Bar -->
+    <div class="bottom-headlines">
+        <div class="latest-label">LATEST UPDATES</div>
+        <div class="marquee-reverse">
+            <div class="marquee-content-reverse">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
